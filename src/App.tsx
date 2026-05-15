@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { Analytics } from '@vercel/analytics/react';
 import { SiteContentProvider, useSiteContentContext } from '@/context/SiteContentContext';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
@@ -89,6 +90,7 @@ function ContactsEditorPageWrapper() {
 export default function App() {
   return (
     <HelmetProvider>
+      <Analytics />
       <SiteContentProvider>
         <BrowserRouter>
           <Routes>
