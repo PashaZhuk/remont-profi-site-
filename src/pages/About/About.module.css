@@ -1,0 +1,104 @@
+.header {
+  background: linear-gradient(135deg, #1e293b, #1e3a5f);
+  padding: 120px 0 60px;
+  text-align: center;
+  color: white;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.textBlock p {
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.statCard {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.statValue {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.statLabel {
+  display: block;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.valueCard {
+  text-align: center;
+  padding: 32px 20px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+.valueIcon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.valueTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.valueDesc {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  .headerTitle {
+    font-size: 1.8rem;
+  }
+}

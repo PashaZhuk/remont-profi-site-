@@ -1,0 +1,41 @@
+.header {
+  background: linear-gradient(135deg, #1e293b, #1e3a5f);
+  padding: 120px 0 60px;
+  text-align: center;
+  color: white;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.headerSubtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+}
+
+.featureIcon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.featureLabel {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
